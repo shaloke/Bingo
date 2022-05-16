@@ -1,16 +1,17 @@
 <script>
+  import { Button } from 'attractions';
   let count = 0
   const increment = () => {
     count += 1
   }
 </script>
 
-<button on:click={increment}>
+<Button on:click={increment}>
   Clicks: {count}
-</button>
+</Button>
 
 <style>
-  button {
+  Button {
     font-family: inherit;
     font-size: inherit;
     padding: 1em 2em;
@@ -24,11 +25,11 @@
     cursor: pointer;
   }
 
-  button:focus {
+  Button:focus {
     border: 2px solid #ff3e00;
   }
 
-  button:active {
+  Button:active {
     background-color: rgba(255, 62, 0, 0.2);
   }
 </style>
